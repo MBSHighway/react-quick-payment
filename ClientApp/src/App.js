@@ -4,7 +4,6 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import Amort from './components/Amort';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -13,7 +12,6 @@ export default class App extends Component {
         return (
             <Layout>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/amort' component={Amort} />
                 <Route path='/counter' component={Counter} />
                 <Route path='/fetch-data' component={FetchData} />
             </Layout>
